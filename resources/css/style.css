@@ -1,4 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
 #mvmLog {
     height: 100px;
     width: 100px;
+}
+
+ul li a {
+    margin: 0 8px;
+    padding: 8px;
+    font-size: 1.2em;
+}
+
+ul li a:hover {
+    margin: -2px;
+    background: white;
+}
+
+.jumbotron {
+    height: 800px;
+}
+
+.jumbocontainer {
+    margin-top: 200px;
+    align-content: center;
+}
+
+#jumbohead {
+    font-weight: 900;
+    font-family: 'Krona One', 'Zen Dots', sans-serif, cursive;
+    text-align: center;
+    background-image: url(resources\images\image-1.jpg);
+}
+
+#jumbopara {
+    text-align: center;
+    font-weight: 700;
+}
+
+#ittraining {
+    font-weight: 800;
+    color: rgb(175, 175, 84);
+}
+
+.sectionhead {
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+.line {
+    width: 5%;
+    padding-top: 10px;
+    border-bottom: 4px solid rgb(109, 24, 24);
+}
+
+
+/*medium device media query*/
+
+@media screen and (max-width: 992px) {
+    #mylogo {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .logoName {
+        font-size: .7em;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    ul li a {
+        margin: 0 5px;
+        padding: 5px;
+        font-size: .8em;
+        line-height: 14px;
+    }
+}
+
+
+/*small device media query*/
+
+@media screen and (max-width: 768px) {
+    #mylogo {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    ul li a {
+        margin: 0 5px;
+        padding: 5px;
+        font-size: .7em;
+        line-height: 12px;
+        /*???*/
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mkmain h1 {
+        line-height: 60px;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 2em;
+    }
 }
