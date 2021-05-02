@@ -2,11 +2,22 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
+    background-color: ivory;
 }
 
 #mvmLog {
     height: 100px;
     width: 100px;
+}
+
+.cbranding {
+    height: 25px;
+    background-image: linear-gradient(darkgreen, green, rgb(172, 172, 9), rgb(241, 241, 8), rgb(177, 11, 11), red);
+}
+
+.foot {
+    color: white;
+    margin-right: 5px;
 }
 
 .social li {
@@ -30,7 +41,7 @@ ul li a:hover {
 }
 
 .jumbocontainer {
-    margin-top: 200px;
+    margin-top: 10%;
     align-content: center;
 }
 
