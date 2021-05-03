@@ -10,19 +10,11 @@ body {
     width: 100px;
 }
 
-.foot {
-    color: white;
-    margin-right: 5px;
-}
-
-.social li {
-    list-style: none;
-}
-
 ul li a {
     margin: 0 8px;
     padding: 8px;
     font-size: 1.2em;
+    color: aliceblue;
 }
 
 ul li a:hover {
@@ -30,28 +22,60 @@ ul li a:hover {
     background: white;
 }
 
-.jumbocontainer {
-    align-content: center;
+
+/* Carousel */
+
+.carousel-caption {
+    top: 400px;
+    bottom: auto;
 }
 
 #jumbohead {
     font-weight: 900;
-    font-family: 'Krona One', 'Zen Dots', sans-serif, cursive;
-    text-align: center;
+    color: aliceblue;
 }
 
 #jumbopara {
-    text-align: center;
     font-weight: 700;
 }
 
 #ittraining {
     font-weight: 800;
-    color: rgb(175, 175, 84);
+    color: rgb(240, 240, 15);
 }
 
-.slide-border {
-    background-image: "resoures/images/slider-border.jpg"
+#module {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#module #collapseExample.collapse:not(.show) {
+    display: block;
+    height: 3rem;
+    overflow: hidden;
+}
+
+#module #collapseExample.collapsing {
+    height: 3rem;
+}
+
+
+/* #module p.collapse[aria-expanded="false"] {
+    display: block;
+    height: 3rem !important;
+    overflow: hidden;
+}
+
+#module p.collapse.show[aria-expanded="false"] {
+    height: 3rem !important;
+} */
+
+#module a.collapsed::after {
+    content: '+ Show More';
+}
+
+#module a:not(.collapsed)::after {
+    content: '- Show Less';
 }
 
 .sectionhead {
@@ -108,6 +132,15 @@ flip card
 .social a i {
     margin-top: 15px;
     margin-right: 40px;
+}
+
+.foot {
+    color: white;
+    margin: auto;
+}
+
+.social li {
+    list-style: none;
 }
 
 
