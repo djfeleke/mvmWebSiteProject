@@ -10,11 +10,6 @@ body {
     width: 100px;
 }
 
-.cbranding {
-    height: 25px;
-    background-image: linear-gradient(darkgreen, green, rgb(172, 172, 9), rgb(241, 241, 8), rgb(177, 11, 11), red);
-}
-
 .foot {
     color: white;
     margin-right: 5px;
@@ -35,13 +30,7 @@ ul li a:hover {
     background: white;
 }
 
-.jumbotron {
-    height: 800px;
-    background-color: rgb(236, 243, 241);
-}
-
 .jumbocontainer {
-    margin-top: 10%;
     align-content: center;
 }
 
@@ -49,7 +38,6 @@ ul li a:hover {
     font-weight: 900;
     font-family: 'Krona One', 'Zen Dots', sans-serif, cursive;
     text-align: center;
-    background-image: url(resources\images\image-1.jpg);
 }
 
 #jumbopara {
@@ -60,6 +48,10 @@ ul li a:hover {
 #ittraining {
     font-weight: 800;
     color: rgb(175, 175, 84);
+}
+
+.slide-border {
+    background-image: "resoures/images/slider-border.jpg"
 }
 
 .sectionhead {
