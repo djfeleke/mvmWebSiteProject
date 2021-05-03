@@ -19,7 +19,7 @@ ul li a {
 
 ul li a:hover {
     margin: -2px;
-    background: white;
+    background: rgb(188, 230, 243);
 }
 
 
@@ -131,7 +131,6 @@ flip card
 
 .social a i {
     margin-top: 15px;
-    margin-right: 40px;
 }
 
 .foot {
@@ -141,6 +140,10 @@ flip card
 
 .social li {
     list-style: none;
+}
+
+.socialicons {
+    margin-left: 10px;
 }
 
 
