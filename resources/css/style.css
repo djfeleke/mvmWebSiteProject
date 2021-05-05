@@ -25,18 +25,20 @@ ul li a:hover {
 
 /* Carousel */
 
-.carousel-caption {
-    top: 400px;
+.captionHeight {
+    top: 20px;
     bottom: auto;
 }
 
 #jumbohead {
     font-weight: 900;
+    font-size: xx-large;
     color: aliceblue;
 }
 
 #jumbopara {
     font-weight: 700;
+    font-size: x-large;
 }
 
 #ittraining {
@@ -44,8 +46,13 @@ ul li a:hover {
     color: rgb(240, 240, 15);
 }
 
+.sectionhead {
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
 #module {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.5;
 }
 
@@ -59,17 +66,6 @@ ul li a:hover {
     height: 3rem;
 }
 
-
-/* #module p.collapse[aria-expanded="false"] {
-    display: block;
-    height: 3rem !important;
-    overflow: hidden;
-}
-
-#module p.collapse.show[aria-expanded="false"] {
-    height: 3rem !important;
-} */
-
 #module a.collapsed::after {
     content: '+ Show More';
 }
@@ -78,24 +74,11 @@ ul li a:hover {
     content: '- Show Less';
 }
 
-.sectionhead {
-    margin: 10px;
-    padding-bottom: 10px;
-}
-
 .line {
     width: 10%;
     padding-top: 10px;
     border-bottom: 4px solid rgb(109, 24, 24);
 }
-
-
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-
-
-/*
-flip card
-*/
 
 .card-flip>div {
     backface-visibility: hidden;
@@ -159,44 +142,69 @@ flip card
 @media screen and (max-width: 992px) {
     .logoName {
         font-size: .7em;
-        width: 200px;
+        width: 150px;
     }
-}
-
-@media screen and (max-width: 992px) {
+    .captionHeight {
+        top: 20px;
+        bottom: auto;
+    }
     ul li a {
         margin: 0 5px;
         padding: 5px;
         font-size: .8em;
         line-height: 14px;
     }
+    #module {
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+    #module #collapseExample.collapse:not(.show) {
+        display: block;
+        height: 2rem;
+        overflow: hidden;
+    }
+    #module #collapseExample.collapsing {
+        height: 2rem;
+    }
+    #module a.collapsed::after {
+        content: '+ Show More';
+    }
+    #module a:not(.collapsed)::after {
+        content: '- Show Less';
+    }
 }
-
-
-/*small device media query*/
 
 @media screen and (max-width: 768px) {
     #mylogo {
         width: 60px;
         height: 60px;
     }
-}
-
-@media screen and (max-width: 768px) {
+    .captionHeight {
+        top: 50px;
+        bottom: auto;
+    }
     ul li a {
         margin: 0 5px;
         padding: 5px;
         font-size: .7em;
         line-height: 12px;
-        /*???*/
     }
-}
-
-@media screen and (max-width: 768px) {
-    .mkmain h1 {
-        line-height: 60px;
-        vertical-align: middle;
-        text-align: center;
-        font-size: 2em;
+    #module {
+        font-size: 1.2rem;
+        line-height: 1.2;
+    }
+    #module #collapseExample.collapse:not(.show) {
+        display: block;
+        height: 2rem;
+        overflow: scroll;
+    }
+    #module #collapseExample.collapsing {
+        height: 2rem;
+    }
+    #module a.collapsed::after {
+        content: '+ Show More';
+    }
+    #module a:not(.collapsed)::after {
+        content: '- Show Less';
     }
 }
