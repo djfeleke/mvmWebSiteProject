@@ -1,231 +1,215 @@
-body {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    background-color: ivory;
-}
-
-#mvmLog {
-    height: 100px;
-    width: 100px;
-}
-
-ul li a {
-    margin: 0 8px;
-    padding: 8px;
-    font-size: 1.2em;
-    color: aliceblue;
-}
-
-ul li a:hover {
-    margin: -2px;
-    background: rgb(188, 230, 243);
-}
-
-
-/* Carousel */
-
-.captionHeight {
-    top: 20px;
-    bottom: auto;
-}
-
-#jumbohead {
-    font-weight: 900;
-    font-size: xx-large;
-    color: aliceblue;
-}
-
-#jumbopara {
-    font-weight: 700;
-    font-size: x-large;
-}
-
-#ittraining {
-    font-weight: 800;
-    color: rgb(240, 240, 15);
-}
-
-.sectionhead {
-    margin: 10px;
-    padding-bottom: 10px;
-}
-
-#module {
-    font-size: 1.2rem;
-    line-height: 1.5;
-}
-
-#module #collapseExample.collapse:not(.show) {
-    display: block;
-    height: 3rem;
-    overflow: hidden;
-}
-
-#module #collapseExample.collapsing {
-    height: 3rem;
-}
-
-#module a.collapsed::after {
-    content: '+ Show More';
-}
-
-#module a:not(.collapsed)::after {
-    content: '- Show Less';
-}
-
-.line {
-    width: 10%;
-    padding-top: 10px;
-    border-bottom: 4px solid rgb(109, 24, 24);
-}
-
-.card-flip>div {
-    backface-visibility: hidden;
-    transition: transform 300ms;
-    transition-timing-function: linear;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    display: flex;
-}
-
-.card-front {
-    transform: rotateY(0deg);
-}
-
-.card-back {
-    transform: rotateY(180deg);
-    position: absolute;
-    top: 0;
-}
-
-.card-flip:hover .card-front {
-    transform: rotateY(-180deg);
-}
-
-.card-flip:hover .card-back {
-    transform: rotateY(0deg);
-}
-
-.container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 56.25%;
-    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-}
-
-
-/* Then style the iframe to fit in the container div with full height and width */
-
-.responsive-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.social li i {
-    margin-top: 5px;
-}
-
-.social a i {
-    margin-top: 15px;
-}
-
-.foot {
-    color: white;
-    margin: auto;
-}
-
-.social li {
-    list-style: none;
-}
-
-.socialicons {
-    margin-left: 10px;
-}
-
-
-/*medium device media query*/
-
-@media screen and (max-width: 992px) {
-    #mylogo {
-        width: 70px;
-        height: 70px;
-    }
-    .logoName {
-        font-size: .7em;
-        width: 150px;
-    }
-    .captionHeight {
-        top: 20px;
-        bottom: auto;
-    }
-    ul li a {
-        margin: 0 5px;
-        padding: 5px;
-        font-size: .8em;
-        line-height: 14px;
-    }
-    #module {
-        font-size: 1rem;
-        line-height: 1.2;
-    }
-    #module #collapseExample.collapse:not(.show) {
-        display: block;
-        height: 2rem;
-        overflow: hidden;
-    }
-    #module #collapseExample.collapsing {
-        height: 2rem;
-    }
-    #module a.collapsed::after {
-        content: '+ Show More';
-    }
-    #module a:not(.collapsed)::after {
-        content: '- Show Less';
-    }
-}
-
-@media screen and (max-width: 768px) {
-    #mylogo {
-        width: 60px;
-        height: 60px;
-    }
-    .captionHeight {
-        top: 50px;
-        bottom: auto;
-    }
-    ul li a {
-        margin: 0 5px;
-        padding: 5px;
-        font-size: .7em;
-        line-height: 12px;
-    }
-    #module {
-        font-size: 1.2rem;
-        line-height: 1.2;
-    }
-    #module #collapseExample.collapse:not(.show) {
-        display: block;
-        height: 2rem;
-        overflow: scroll;
-    }
-    #module #collapseExample.collapsing {
-        height: 2rem;
-    }
-    #module a.collapsed::after {
-        content: '+ Show More';
-    }
-    #module a:not(.collapsed)::after {
-        content: '- Show Less';
-    }
-    .socialicons {
-        margin-left: 3px;
-    }
-}
+        body {
+            margin: 0;
+            padding: 0;
+            position: relative;
+            background-color: ivory;
+        }
+        
+        #mvmLog {
+            height: 100px;
+            width: 100px;
+        }
+        
+        .navbar-brand {
+            padding: 0px;
+        }
+        
+        .navbar-brand>img {
+            height: 100%;
+            padding: 15px;
+            width: auto;
+        }
+        
+        ul li a {
+            margin: 0 8px;
+            padding: 8px;
+            font-size: 1.2em;
+            color: aliceblue;
+        }
+        
+        ul li a:hover {
+            margin: -2px;
+            background: rgb(188, 230, 243);
+        }
+        
+        .jumbotron {
+            margin-top: 15px;
+            background: url("../images/jumbo-image.jpg") no-repeat center center;
+            -webkit-background-size: 100% 100%;
+            -moz-background-size: 100% 100%;
+            -o-background-size: 100% 100%;
+            background-size: 100% 100%;
+        }
+        
+        #mvmhead {
+            text-align: center;
+            font-weight: 900;
+            font-size: 7rem;
+            color: aliceblue;
+        }
+        
+        #mvmpara {
+            font-weight: 700;
+            text-align: center;
+            font-size: 3rem;
+            color: aliceblue;
+        }
+        
+        #ittraining {
+            font-weight: 800;
+            color: rgb(240, 240, 15);
+        }
+        
+        .sectionhead {
+            margin: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .line {
+            width: 10%;
+            padding-top: 10px;
+            border-bottom: 4px solid rgb(109, 24, 24);
+        }
+        
+        .card-flip>div {
+            backface-visibility: hidden;
+            transition: transform 300ms;
+            transition-timing-function: linear;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            display: flex;
+        }
+        
+        .card-front {
+            transform: rotateY(0deg);
+        }
+        
+        .card-back {
+            transform: rotateY(180deg);
+            position: absolute;
+            top: 0;
+        }
+        
+        .card-flip:hover .card-front {
+            transform: rotateY(-180deg);
+        }
+        
+        .card-flip:hover .card-back {
+            transform: rotateY(0deg);
+        }
+        
+        .container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%;
+            /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+        }
+        /* Then style the iframe to fit in the container div with full height and width */
+        
+        .responsive-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .social li i {
+            margin-top: 5px;
+        }
+        
+        .social a i {
+            margin-top: 15px;
+        }
+        
+        .foot {
+            color: white;
+            margin: auto;
+        }
+        
+        .social li {
+            list-style: none;
+        }
+        
+        .socialicons {
+            margin-left: 10px;
+        }
+        /*medium device media query*/
+        
+        @media screen and (max-width: 992px) {
+            #mvmLog {
+                height: 80px;
+                width: 80px;
+            }
+            #mvmhead {
+                font-size: 5rem;
+            }
+            #mvmpara {
+                font-size: 2rem;
+            }
+        }
+        
+        @media screen and (max-width: 992px) {
+            #mylogo {
+                width: 60px;
+                height: 60px;
+            }
+            ul li a {
+                margin: 0 5px;
+                padding: 5px;
+                font-size: .8em;
+                line-height: 14px;
+            }
+            #mvmhead {
+                font-size: 3rem;
+            }
+            #mvmpara {
+                font-size: 2rem;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            #mylogo {
+                width: 60px;
+                height: 60px;
+            }
+            .captionHeight {
+                top: 50px;
+                bottom: auto;
+            }
+            ul li a {
+                margin: 0 5px;
+                padding: 5px;
+                font-size: .7em;
+                line-height: 12px;
+            }
+            .socialicons {
+                margin-left: 3px;
+            }
+            .toBeRemoved {
+                display: none;
+            }
+            #mvmhead {
+                font-size: 2rem;
+            }
+            #mvmpara {
+                font-size: 1rem;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            #mvmLog {
+                height: 40px;
+                width: 40px;
+            }
+            #mvmhead {
+                font-size: 1rem;
+            }
+            #mvmpara {
+                font-size: 12px;
+            }
+        }
