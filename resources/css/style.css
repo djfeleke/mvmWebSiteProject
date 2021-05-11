@@ -5,11 +5,6 @@
             background-color: ivory;
         }
         
-        #mvmLog {
-            height: 100px;
-            width: 100px;
-        }
-        
         .navbar-brand {
             padding: 0px;
         }
@@ -20,14 +15,22 @@
             width: auto;
         }
         
+        .navbar-nav .nav-link {
+            color: rgb(3, 3, 3);
+        }
+        
         ul li a {
             margin: 0 8px;
             padding: 8px;
             font-size: 1.2em;
-            color: aliceblue;
         }
         
         ul li a:hover {
+            margin: -2px;
+            background: rgb(188, 230, 243);
+        }
+        
+        .dropdown-menu a:hover {
             margin: -2px;
             background: rgb(188, 230, 243);
         }
@@ -99,16 +102,15 @@
             transform: rotateY(0deg);
         }
         
-        .container {
+        .summerCampAdVideo {
             position: relative;
             overflow: hidden;
             width: 100%;
             padding-top: 56.25%;
-            /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
         }
         /* Then style the iframe to fit in the container div with full height and width */
         
-        .responsive-iframe {
+        .summerCampAdVideo-iframe {
             position: absolute;
             top: 0;
             left: 0;
@@ -126,11 +128,6 @@
             margin-top: 15px;
         }
         
-        .foot {
-            color: white;
-            margin: auto;
-        }
-        
         .social li {
             list-style: none;
         }
@@ -138,13 +135,14 @@
         .socialicons {
             margin-left: 10px;
         }
+        
+        .copyRight {
+            color: white;
+            margin: auto;
+        }
         /*medium device media query*/
         
-        @media screen and (max-width: 992px) {
-            #mvmLog {
-                height: 80px;
-                width: 80px;
-            }
+        @media screen and (max-width: 1200px) {
             #mvmhead {
                 font-size: 5rem;
             }
@@ -154,14 +152,10 @@
         }
         
         @media screen and (max-width: 992px) {
-            #mylogo {
-                width: 60px;
-                height: 60px;
-            }
             ul li a {
                 margin: 0 5px;
                 padding: 5px;
-                font-size: .8em;
+                font-size: 1em;
                 line-height: 14px;
             }
             #mvmhead {
@@ -173,10 +167,6 @@
         }
         
         @media screen and (max-width: 768px) {
-            #mylogo {
-                width: 60px;
-                height: 60px;
-            }
             .captionHeight {
                 top: 50px;
                 bottom: auto;
@@ -184,7 +174,7 @@
             ul li a {
                 margin: 0 5px;
                 padding: 5px;
-                font-size: .7em;
+                font-size: .8em;
                 line-height: 12px;
             }
             .socialicons {
@@ -202,10 +192,6 @@
         }
         
         @media screen and (max-width: 480px) {
-            #mvmLog {
-                height: 40px;
-                width: 40px;
-            }
             #mvmhead {
                 font-size: 1rem;
             }
