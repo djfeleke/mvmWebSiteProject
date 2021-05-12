@@ -40,11 +40,11 @@
         
         .jumbotron {
             margin-top: 15px;
-            background: url("../images/jumbo-image.jpg") no-repeat center center;
+            background: url("../images/shutterstock_4b.jpg") no-repeat center center;
             -webkit-background-size: 100% 100%;
             -moz-background-size: 100% 100%;
             -o-background-size: 100% 100%;
-            background-size: 100% 100%;
+            background-size: cover;
         }
         
         #mvmhead {
@@ -105,6 +105,10 @@
             transform: rotateY(0deg);
         }
         
+        .card-text {
+            font-size: 1.2rem;
+        }
+        
         hr {
             padding: 15px 0 5px 0;
             width: 75%;
@@ -112,6 +116,7 @@
         
         .profiledetails {
             text-align: justify;
+            font-size: 1.2rem;
             margin-right: 80px;
         }
         
@@ -203,7 +208,12 @@
                 font-size: 1rem;
             }
             .profiledetails {
+                text-align: justify;
+                font-size: 1rem;
                 margin-right: 10px;
+            }
+            .card-text {
+                font-size: 1rem;
             }
         }
         
