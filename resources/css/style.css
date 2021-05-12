@@ -34,6 +34,9 @@
             margin: -2px;
             background: rgb(188, 230, 243);
         }
+        /* .jumbotron {
+            height: 800px;
+        } */
         
         .jumbotron {
             margin-top: 15px;
@@ -100,6 +103,16 @@
         
         .card-flip:hover .card-back {
             transform: rotateY(0deg);
+        }
+        
+        hr {
+            padding: 15px 0 5px 0;
+            width: 75%;
+        }
+        
+        .profiledetails {
+            text-align: justify;
+            margin-right: 80px;
         }
         
         .summerCampAdVideo {
@@ -188,6 +201,9 @@
             }
             #mvmpara {
                 font-size: 1rem;
+            }
+            .profiledetails {
+                margin-right: 10px;
             }
         }
         
