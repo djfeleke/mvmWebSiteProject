@@ -63,6 +63,10 @@
             color: rgb(240, 240, 15);
         }
         
+        .card-header h2 button {
+            font-size: 1.5rem;
+        }
+        
         .sectionhead {
             margin: 10px;
             padding-bottom: 10px;
