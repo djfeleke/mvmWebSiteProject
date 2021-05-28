@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
 
+    <link rel="stylesheet" type="text/css" href="resources/css/timerStyle.css">
+
 </head>
 
 <body>
@@ -56,26 +58,28 @@
         <h4 class="card-title mb-4" id="registration">SUMMER IT CAMP TRAINING for Kids (starting from 3rd grade) and Teenagers.
             <div class="line "></div>
         </h4>
-        <div class="card-group">
-            <div class="card">
-                <div class="card-body px-5">
-                    <h4> Important dates!</h4>
-                    <p><strong>Registration extended until June 2, 2021. <br> Orientation date: June 2, 2021</strong></p>
-                    <p class="sectiondetail">Greetings from My Vision Match (MVM)- Your Trusted Professional IT Training Provider! It is our pleasure to invite you to register for the course(s) provided by MVM. We are very excited you chose to train with us, and rest assured,
-                        we will work with you based on your needs.</p>
-                    <p class="sectiondetail"> This SUMMER IT CAMP TRAINING is mainly designed for Kids (starting from 3rd grade) and Teenagers. </p>
-                    <p class="sectiondetail"> Class will start on June 14 and each course lasts for 4 weeks.</p>
-                    <p class="sectiondetail">Class will be held <strong>Monday to Friday </strong>for one hour every day</p>
-                    <h4>Available Courses and Tuition</h4>
-                    <ol>
-                        <li>Website Development<em> - Tuition: $200</em></li>
-                        <li>Mobile App Development<em> - Tuition: $200</em></li>
-                        <li>Game Development<em> - Tuition: $200</em></li>
-                        <li>Software Development <em> - Tuition: $200</em></li>
-                    </ol>
-                    <p class="sectiondetail">Please click <a href="https://forms.gle/tRTSTqYzf4ibx2Lb7" target="_blank" class="">HERE</a> to register</p>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card-group ">
+                    <div class="card ">
+                        <div class="card-body px-5 ">
+                            <h4> Important dates!</h4>
+                            <p><strong>Registration extended until June 2, 2021. <br> Orientation date: June 2, 2021</strong></p>
+                            <p class="sectiondetail ">Greetings from My Vision Match (MVM)- Your Trusted Professional IT Training Provider! It is our pleasure to invite you to register for the course(s) provided by MVM. We are very excited you chose to train with us, and rest
+                                assured, we will work with you based on your needs.</p>
+                            <p class="sectiondetail "> This SUMMER IT CAMP TRAINING is mainly designed for Kids (starting from 3rd grade) and Teenagers. </p>
+                            <p class="sectiondetail "> Class will start on June 14 and each course lasts for 4 weeks.</p>
+                            <p class="sectiondetail ">Class will be held <strong>Monday to Friday </strong>for one hour every day</p>
+                            <h4>Available Courses and Tuition</h4>
+                            <ol>
+                                <li>Website Development<em> - Tuition: $200</em></li>
+                                <li>Mobile App Development<em> - Tuition: $200</em></li>
+                                <li>Game Development<em> - Tuition: $200</em></li>
+                                <li>Software Development <em> - Tuition: $200</em></li>
+                            </ol>
+                            <p class="sectiondetail ">Please click <a href="https://forms.gle/tRTSTqYzf4ibx2Lb7 " target="_blank " class=" ">HERE</a> to register</p>
 
-                    <!-- <ol>
+                            <!-- <ol>
                         <li>Click here Summer Camp and follow the STEPS below</li>
                         <li>Click on SIGN UP and fill out all the required fields with the the STUDENT information </li>
                         <li>Use a strong password that is at least 8 characters long and contains at least 1 uppercase letter, 1 lowercase letter, and 1 number. Once you sign up, please wait for some time until your account gets activated by the administrator.</li>
@@ -87,58 +91,87 @@
                         <li>Put in your payment information and click on the CHECK OUT button</li>
 
                     </ol> 
-                    <p class="sectiondetail">This completes your registration. You will get a separate email notification for orientation date.</p>-->
-                    <p class="sectiondetail"> If you are registering more than one student, please fill out the form for each individual.</p>
-                    <p class="sectiondetail">If two or more students registered from one family, the additional student will be eligible to get a 25% discount towards the course fee</p>
-                    <p class="sectiondetail">If you have any questions, do not hesitate to contact us. </p>
+                    <p class="sectiondetail ">This completes your registration. You will get a separate email notification for orientation date.</p>-->
+                            <p class="sectiondetail "> If you are registering more than one student, please fill out the form for each individual.</p>
+                            <p class="sectiondetail ">If two or more students registered from one family, the additional student will be eligible to get a 25% discount towards the course fee</p>
+                            <p class="sectiondetail ">If you have any questions, do not hesitate to contact us. </p>
 
-                    <!--  <p class="sectiondetail">Regards!</p> -->
+                            <!--  <p class="sectiondetail ">Regards!</p> -->
 
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="col-md-4 col-container">
+                <h1 id="countDownTitle">Class Start Day</h1>
 
+                <div class="main-container">
+
+                    <div class="comClass days-container">
+
+                        <p class="p-Style" id='days'> 0</p>
+                        <span>Days
+                         </span>
+                    </div>
+                    <div class="comClass hours-container">
+                        <p class="p-Style" id="hours"> 0</p>
+                        <span>Hours
+                         </span>
+                    </div>
+                    <div class="comClass minutes-container">
+                        <p class="p-Style" id="minutes"> 0</p>
+                        <span>Minutes
+                         </span>
+                    </div>
+                    <div class="comClass seconds-container">
+                        <p class="p-Style" id="seconds"> 0</p>
+                        <span>Seconds
+                         </span>
+                    </div>
+                </div>
+
+            </div>
         </div>
-
-        <footer class="row my-3">
+        <footer class="row my-3 ">
             <!--bg-secondary Can be placed inside to change the background color-->
             <div class="mt-3 col-md-6 ">
 
                 <div class="card sectionhead ">
                     <div class="card-body ">
-                        <h4 class="card-title " id="registration">Signup TODAY!
+                        <h4 class="card-title " id="registration ">Signup TODAY!
                             <div class="line "></div>
                         </h4>
                         <p class="card-text sectiondetail "> Register for the Summer IT Camp for your Kids and Teenagers. <br>
                             <strong> We have limited spaces.</strong></p>
 
-                        <a href="https://forms.gle/tRTSTqYzf4ibx2Lb7" target="_blank" class="btn btn-primary btn-lg btn-sm">Register</a>
+                        <a href="https://forms.gle/tRTSTqYzf4ibx2Lb7 " target="_blank " class="btn btn-primary btn-lg btn-sm ">Register</a>
                     </div>
                 </div>
             </div>
             <div class="mt-3 col-md-6 ">
                 <div class="card sectionhead ">
                     <div class="card-body ">
-                        <h3 class="card-title" id="contactus">Contact Us
+                        <h3 class="card-title " id="contactus ">Contact Us
                             <div class="line "></div>
                         </h3>
                         <ul class="row social ">
                             <div class="col ">
-                                <li><i class="socialicons fa fa-envelope fa-lg fa-sm mb-2" aria-hidden="true "> info@myvisionmatch.com  </i> </li>
-                                <i class="socialicons fa fa-phone fa-lg fa-sm" aria-hidden="true "> 202-455-6599  </i>
+                                <li><i class="socialicons fa fa-envelope fa-lg fa-sm mb-2 " aria-hidden="true "> info@myvisionmatch.com  </i> </li>
+                                <i class="socialicons fa fa-phone fa-lg fa-sm " aria-hidden="true "> 202-455-6599  </i>
                                 <div>
-                                    <a href="https://www.youtube.com/channel/UC33zOdz8LOateGzeYQqN4WQ/"><i class="socialicons fa fa-youtube fa-lg fa-sm " aria-hidden="true "></i></a>
+                                    <a href="https://www.youtube.com/channel/UC33zOdz8LOateGzeYQqN4WQ/ "><i class="socialicons fa fa-youtube fa-lg fa-sm " aria-hidden="true "></i></a>
 
-                                    <a href="https://www.facebook.com/myvisionmatch "> <i class="socialicons fa fa-facebook-official fa-lg fa-sm" aria-hidden="true "></i></a>
+                                    <a href="https://www.facebook.com/myvisionmatch "> <i class="socialicons fa fa-facebook-official fa-lg fa-sm " aria-hidden="true "></i></a>
 
 
-                                    <a href="https://t.me/myvisionmatch "> <i class="socialicons fa fa-telegram fa-lg fa-sm" aria-hidden="true "> </i> </a>
+                                    <a href="https://t.me/myvisionmatch "> <i class="socialicons fa fa-telegram fa-lg fa-sm " aria-hidden="true "> </i> </a>
                                 </div>
                             </div>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="copyRight"> <i class="fa fa-copyright" aria-hidden="false"></i>mvm 2021</div>
+            <div class="copyRight "> <i class="fa fa-copyright " aria-hidden="false "></i>mvm 2021</div>
         </footer>
     </div>
 
