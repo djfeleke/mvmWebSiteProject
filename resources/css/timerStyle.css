@@ -14,6 +14,7 @@
     font-size: 4rem;
     color: rgb(3, 31, 31);
     font-weight: 900;
+    color: rgb(0, 68, 255);
 }
 
 .comClass {
@@ -25,8 +26,10 @@
     line-height: 1;
     font-size: 5rem;
     margin: 4rem 2rem 1rem;
+    color: rgb(191, 80, 255);
 }
 
 .comClass span {
     font-size: 1.4rem;
+    color: darkcyan;
 }
